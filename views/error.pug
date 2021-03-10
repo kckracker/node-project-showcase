@@ -1,0 +1,10 @@
+extends layout 
+
+block content 
+
+    h1.error-page= error.message
+    div
+    h2.error-page= `Error ${error.status}`
+        h3.error-page More dev details: 
+        textarea.error-page
+            p.error-page= error.stack
