@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+html(lang="en" dir="ltr")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Portfolio Site
+    link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800', rel='stylesheet')
+    link(rel='stylesheet', href='/static/css/normalize.css')
+    link(rel='stylesheet', href='/static/css/styles.css')
+
+  body
+    #my-info.sidebar
+      .sidebar-info-box
+        br
+        .thumbnail-box
+          img.thumbnail(src="/static/images/profile.jpg", alt="Profile picture")
+        .dev-intro-box
+
+          //- Replace with your name
+          h5 Casey Holland
+
+          //- Replace with description of who you are, what you do, and why you are so awesome
+          p Greetings! I am a husband and soon-to-be-father native to North Carolina with over 5 years experience in the telecom management industry. My experience with business technology piqued my interest in development and set my sites on a Techdegree through Team Treehouse. I have learned the basics of HTML, CSS, and JavaScript on the front end as well as the basics of Node, Express, and NPM modules on the backend. This site is one of the many programs I have now written in completion of my Techdegree and in search of a career in development.
+
+          //- Add path from your '/about' route handler to the href below
+          a(href='./about') Learn More &rarr;
+
+    .wrapper
+      .header
+        .header-info-box
+          button#menu-icon.menu-icon(type='button' data-toggle='my-info')
+
+          //- Replace with your name — this is for the mobile layout
+          span Casey Holland
+
+      block content
+
+  script(src='/static/js/script.js')
