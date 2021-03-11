@@ -7,7 +7,7 @@
         "technologies":[ "JavaScript", "HTML" ],
         "live_link": "https://kckracker.github.io/techdegree_project_1/",
         "github_link":"https://github.com/kckracker/techdegree_project_1.git",
-        "image_urls": ["/static/images/random_quote-square.jpg", "/static/images/random_quote-landscape.jpg"]
+        "image_urls": ["/static/images/random_quote-square.jpg", "/static/images/random_quote-landscape.jpg", "/static/images/random_quote-landscape_2.png"]
         },
         {
         "id": 1,
@@ -16,7 +16,7 @@
         "technologies":[ "JavaScript", "HTML" ],
         "live_link": "https://kckracker.github.io/student-pages-and-filtering/",
         "github_link":"https://github.com/kckracker/student-pages-and-filtering.git",
-        "image_urls": ["/static/images/student_filtering-square.jpg", "/static/images/student_filtering-main.jpg"]
+        "image_urls": ["/static/images/student_filtering-square.jpg", "/static/images/student_filtering-main.jpg", "/static/images/student_filtering-main_2.png"]
         },
         {
         "id": 2,
@@ -25,7 +25,7 @@
         "technologies":[ "JavaScript", "Regex", "HTML" ],
         "live_link": "https://kckracker.github.io/Interactive-T_Shirt-Form/",
         "github_link":"https://github.com/kckracker/Interactive-T_Shirt-Form.git",
-        "image_urls": ["/static/images/order_form-totals.png", "/static/images/order_form-landscape.png"]
+        "image_urls": ["/static/images/order_form-totals.png", "/static/images/order_form-landscape.png", "/static/images/order_form-landscape_2.png"]
         },
         {
         "id": 3,
@@ -34,7 +34,7 @@
         "technologies":[ "JavaScript", "CSS", "HTML" ],
         "live_link": "https://kckracker.github.io/Word-Guess-Game/",
         "github_link":"https://github.com/kckracker/Word-Guess-Game.git",
-        "image_urls": [ "/static/images/word_guess_game-title.png" , "/static/images/word_guess_game-main.jpg" ]
+        "image_urls": [ "/static/images/word_guess_game-title.png" , "/static/images/word_guess_game-main.jpg", "/static/images/word_guess_game-lose.png" ]
         },
         {
             "id": 4,
@@ -43,7 +43,7 @@
             "technologies":["JavaScript", "CSS", "HTML", "Fetch API"],
             "live_link": "https://kckracker.github.io/public-api_employees/",
             "github_link":"https://github.com/kckracker/public-api_employees.git",
-            "image_urls": [ "/static/images/employee_api-modal.jpg" , "/static/images/employee_api-main.jpeg"]
+            "image_urls": [ "/static/images/employee_api-modal.jpg" , "/static/images/employee_api-main.jpeg", "/static/images/employee_api-search.png"]
             }
     ]
 }
