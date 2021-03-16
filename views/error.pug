@@ -2,6 +2,11 @@ extends layout
 
 block content 
 
+    nav.nav
+        a(href='/')
+            span &larr;
+            |  Back
+
     //- Pushing inherited error message and status data to page dynamically
     h1.error-page= error.message
     div
@@ -9,3 +14,8 @@ block content
         h3.error-page More dev details: 
         textarea.error-page
             p.error-page= error.stack
+
+    nav.nav
+        a(href='/')
+            span &larr;
+            |  Back
