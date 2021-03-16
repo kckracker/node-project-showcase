@@ -2,6 +2,7 @@ extends layout
 
 block content 
 
+    //- Pushing inherited error message and status data to page dynamically
     h1.error-page= error.message
     div
     h2.error-page= `Error ${error.status}`

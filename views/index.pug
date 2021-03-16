@@ -4,25 +4,22 @@ block content
 
   article.portfolio-intro
 
-    //- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' 
-    h1 Programming portfolio
+    
+    h1 Programming Portfolio
 
-    //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
-    p Welcome to my NodeJS / Express enabled project displaying previous JavaScript projects worked through the Team Treehouse program. You will find below a showcase of my existing Techdegree work as a budding developer. Throughout the various projects, I have learned a wide array of logic and skill from writing forms, working with object-orientated programming, resourcing data from external data sets, and more. Please explore the site and thank you for visiting!
+    //- General description of this project / welcome to the site. 
+    p Welcome to my NodeJS / Express enabled project displaying previous JavaScript projects worked through the Team Treehouse program. You will find below a showcase of my existing Techdegree work as a budding developer. Throughout the various projects, I have learned a wide array of logic and skill from writing forms, working with object-oriented programming, resourcing data from external data sets, and more. Please explore the site and thank you for visiting!
 
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
 
-      //- Use the Pug `each` iterator to loop over the projects in your data file  
+      //- Using the Pug `each` iterator to loop over the inherited projects from data.json
       each project of projects
-        //- Use the example Pug code below and interpolated template literals as needed to dynamically generate:
-          //- The paths in the link's href and img's src attributes
-          //- The text 'Thumbnail' interpolated with the project title for the img's alt attribute
-          //- The project title for the h5 element's text
 
+        //- For each project, generating cell division with images and project names pulled from inherited projects data
         .cell
-          a(href=`/project/${project.id}` target="_blank")
+          a(href=`/project/${project.id}`)
             img.thumbnail(src=`${project.image_urls[0]}`, alt=`Thumbnail - ${project.project_name}`)
             h5= project.project_name
 

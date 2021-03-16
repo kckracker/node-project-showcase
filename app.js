@@ -1,3 +1,5 @@
+/*****----- DEPENDENCIES -----*****/
+
 // Requiring dependent modules for project 
 const express = require('express');
 const https = require('https');
@@ -5,14 +7,21 @@ const http = require('http');
 const pug = require('pug');
 const data = require('./data.json');
 
+/*****----- EXPRESS CALL -----*****/
 // Creating app variable to serve as new instance of the express module for this site
 const app = new express();
+
+/*****----- VIEW ENGINE -----******/
 
 // Setting view engine to pug - syntax refresh found at https://expressjs.com/en/guide/using-template-engines.html
 app.set('view engine', 'pug');
 
+/*****----- STATIC FILES -----*****/
+
 // Serving static files to client with static mount path. Syntax refresh found at http://expressjs.com/en/starter/static-files.html
 app.use('/static', express.static('public'));
+
+/******----- ROUTES ------ *****/
 
 // Index route
 app.get('/',(req, res, next) => {
@@ -50,10 +59,15 @@ app.use((err, req, res, next) => {
         err.message = 'Looks like we encountered an issue with your request!'
     }
     res.status(err.status); 
-    res.render('error', err);
+    if (err.status === 404){
+        res.render('page-not-found', err);
+    } else{
+        res.render('error', err);
+    }
 });
 
-// Server start
+/*****----- START SERVER -----*****/ 
+// Defining port and supplying console message to confirm success
 app.listen(3000, () => {
     console.log('This app is listening on port 3000.')
 });
