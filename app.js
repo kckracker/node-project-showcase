@@ -34,19 +34,25 @@ app.get('/about',(req, res, next) => {
     res.render('about');
 });
 
+
 // Dynamic Project route
 app.get('/project/:id',(req, res, next) => {
     const id = req.params.id;
     res.locals.id = id;
-    if (!id){
+    let numbers = [];
+    for(let project of data.projects){
+        numbers.push(project.id);
+    }
+    if (numbers.includes(parseInt(id))){
+        res.render('project', {id});
+    } else{
         return next();
     }
-    res.render('project', {id});
 });
 
 // 404 error
 app.use((req, res, next) => {
-    const err = new Error(`Sorry! Page route [${req.path}] not found.`);
+    const err = new Error(`Sorry! Page route [ ${req.path} ] not found.`);
     err.status = 404;
     return next(err);
 });
@@ -64,6 +70,8 @@ app.use((err, req, res, next) => {
     } else{
         res.render('error', err);
     }
+    console.log(`Error! Status: ${err.status} 
+    ${err.message}`)
 });
 
 /*****----- START SERVER -----*****/ 
