@@ -1,7 +1,7 @@
 ___
 # NODE PROJECT SHOWCASE
 ___
-### Before we begin...[^1]
+### Before we begin... [^1]
 ___
 
 Welcome to the Node Project Showcase powered by NodeJS and Express! This project is a collection of my Team Treehouse work thus far and serves to demonstrate both my previous projects and my own skillset within NodeJS and Express frameworks. 
